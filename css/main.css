@@ -1,0 +1,332 @@
+*{
+
+    margin: 0;
+    padding: 0;
+}
+ input:focus, button:focus, a, a:hover, a:focus {
+     outline: none;
+     text-decoration: none;
+     color: #000;
+}
+ ul {
+     list-style: none;
+     margin: 0;
+}
+ img {
+     max-width: 100%;
+     vertical-align: middle;
+}
+ .clearfix:after {
+     content: "";
+     display: block;
+     clear: both;
+}
+ .common-transition {
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -ms-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+.sec-space-both {
+
+    padding: 100px 0px;
+}
+.sec-space-top {
+
+   padding-top: 100px;
+}
+.sec-space-bottom {
+
+   padding-bottom:100px;
+}
+body {
+
+   
+    font-family: 'Gentium Book Basic', serif;
+    font-weight: 400;
+    line-height: 1.5;
+    
+}
+p {
+
+    font-size: 18px;
+    font-family: 'Gentium Book Basic', serif;
+    margin-bottom: 15px;
+
+}
+h1,h2,h3,h4,h5,h6 {
+
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 0.64px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+h1 {
+
+    font-size: 40px;
+}
+h2 {
+
+    font-size: 30px;
+}
+h3 {
+
+    font-size: 24px;
+}
+.container {
+    max-width: 1260px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.common-transition {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+/*Mobile Menu Icon css Start*/
+ .m-menu-btn {
+     cursor: pointer;
+     height: 25px;
+     width: 24px;
+     position: relative;
+    margin: 8px 0px 0px 10px;
+     display: inline-block;
+     vertical-align: middle;
+     z-index: 9999;
+     display: none;
+}
+ .m-menu-btn span {
+     display: block;
+     position: absolute;
+     height: 2px;
+     width: 100%;
+     background: #0080ff;
+     border-radius: 9px;
+     opacity: 1;
+     left: 0;
+     -webkit-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+     -o-transform: rotate(0deg);
+     transform: rotate(0deg);
+     -webkit-transition: .25s ease-in-out;
+     -moz-transition: .25s ease-in-out;
+     -o-transition: .25s ease-in-out;
+     transition: .25s ease-in-out;
+}
+ .m-menu-btn span:nth-child(1) {
+     top: 0px;
+}
+ .m-menu-btn span:nth-child(2), .m-menu-btn span:nth-child(3) {
+     top: 8px;
+}
+ .m-menu-btn span:nth-child(4) {
+     top: 16px;
+}
+ .m-menu-btn.m-menu-btn-ext span:nth-child(1) {
+     top: 15px;
+     width: 0%;
+     left: 50%;
+}
+ .m-menu-btn.m-menu-btn-ext span:nth-child(2) {
+     -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+     -o-transform: rotate(45deg);
+     transform: rotate(45deg);
+}
+ .m-menu-btn.m-menu-btn-ext span:nth-child(3) {
+     -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+     -o-transform: rotate(-45deg);
+     transform: rotate(-45deg);
+}
+ .m-menu-btn.m-menu-btn-ext span:nth-child(4) {
+     top: 18px;
+     width: 0%;
+     left: 50%;
+}
+ .m-menu-btn.m-menu-btn-ext span {
+     background-color: #0080ff;
+}
+/*Mobile Menu Icon css End */
+.header-section {
+
+    position: relative;
+    background-color:#B1AFFF;
+}
+.header-row {
+
+    display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px 0;
+    
+}
+.logo-colum a {
+
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Alfa Slab One', cursive;
+    color: #0080ff;
+}
+.menu ul li {
+
+    display: inline-block;
+}
+.menu ul li a {
+
+    display: block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: 'Gentium Book Basic', serif;
+    font-weight: 600;
+}
+.menu ul li a:hover {
+
+    color: #0080ff;
+}
+.copy-content-clipboard-button-section {
+
+    background-color: #EEF1FF;
+}
+.copy-content-clipboard-button-section .content {
+
+    display: block;
+    
+}
+.copy-content-clipboard-button-section .content p {
+
+    color: #333;
+   
+   
+}
+.copy-content-clipboard-button-section .content a {
+
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 20px;
+    background-color:#0080ff;
+    color: #fff;
+    font-size: 18px;
+}
+.copy-content-clipboard-button-section .content a > img {
+
+    margin-left: 10px;
+}
+.copy-content-clipboard-button-section .content .copiedtext {
+
+     color: #0080ff;
+     font-weight: 700;
+}
+.add-data-table-section {
+
+    background-color: #D2DAFF;
+}
+.add-data-table-section table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.add-data-table-section td, .add-data-table-section th {
+  border: 1px solid #000;
+  text-align: left;
+  padding: 8px;
+}
+
+.add-data-table-section tr:nth-child(even) {
+  background-color: #c4cffd;
+}
+.add-data-table-section form {
+    margin-bottom: 20px;
+     display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+     -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+}
+.add-data-table-section form input, .add-data-table-section form select {
+    padding: 10px;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    margin-right: 10px;
+    background-color: #fff;
+}
+.add-data-table-section form input[type=button] {
+
+    background-color: #0080ff;
+    color: #fff;
+    cursor: pointer;
+    
+}
+.add-data-table-section .delete-row-wrp {
+
+    text-align: right;
+}
+.add-data-table-section .delete-row  {
+
+     background-color: #0080ff;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 15px;
+     outline: none;
+    border: none;
+    box-shadow: none;
+    margin-left: auto;
+     cursor: pointer;
+}
+.add-data-table-section .table-filters span {
+   
+    margin-right: 10px;
+    font-weight: 700;
+    
+}
+.add-data-table-section .table-filters input {
+
+    margin-right: 0;
+}
+.hide-content-show-more-button-section {
+
+     background-color: #AAC4FF;
+}
+.hide-content-show-more-button-section p.moretext {
+
+    display: none;
+}
+.hide-content-show-more-button-section .show-more-btn {
+
+     color: #0080ff;
+
+}
+.scroll-particular-div-section {
+
+     background-color: #B1B2FF;
+
+}
+.scroll-particular-div-section .scroll-btn {
+
+    background-color:#0080ff;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 18px;
+    display: inline-block;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Goolge Fonts CSS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <title>Javascript Exercises</title>
+    <!-- Style CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header-section">
+        <div class="container">
+            <div class="header-row">
+                <div class="logo-colum">
+                    <a href="javascript:void(0);">Logo</a>
+                </div>
+                <div class="navigation-colum">
+                    <nav class="menu common-transition">
+                        <ul>
+                            <li><a class="common-transition" href="javascript:void(0);">Home</a></li>
+                            <li><a class="common-transition" href="javascript:void(0);">About</a></li>
+                            <li><a class="common-transition" href="javascript:void(0);">services</a></li>
+                            <li><a class="common-transition" href="javascript:void(0);">Blog</a></li>
+                            <li><a class="common-transition" href="javascript:void(0);">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                    <div class="m-menu-btn"><span> </span> <span> </span> <span> </span> <span> </span></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="copy-content-clipboard-button-section sec-space-both">
+        <div class="container">
+            <h2>Copy - Paste content in clipboard via button</h2>
+
+            <div class="copy-content">
+                <span class="content">
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form,
+                        by injected humour, or randomised words which don't look even slightly believable. If you are
+                        going to use a passage of
+                        Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text
+                    </p>
+                    <a href="javascript:void(0);">Copy Text<img class="has-tip tip-top" src="image/copy.svg"
+                            alt="copy"></a>
+                    <span class="copiedtext"></span>
+                </span>
+            </div>
+        </div>
+    </section>
+    <section class="add-data-table-section sec-space-both">
+        <div class="container">
+            <h2>Add forms data in a table with a button click and remove</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" id="company" placeholder="Company">
+                    <input type="text" id="contact" placeholder="Contact">
+                    <select id="country">
+                        <option selected>Select Country</option>
+                        <option>Germany</option>
+                        <option>Mexico</option>
+                        <option>Austria</option>
+                        <option>Canada</option>
+                        <option>Italy</option>
+                        <option>India</option>
+                    </select>
+                    <input type="button" class="add-row" value="Add Row">
+                </div>
+                <div class="table-filters">
+                    <span>Filters:</span>
+                    <input id="myInput" type="text" placeholder="Search..">
+                </div>
+
+            </form>
+
+            <table id="myTable">
+                <tr>
+                    <th>Select</th>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="record"></td>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="record"></td>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="record"></td>
+                    <td>Ernst Handel</td>
+                    <td>Roland Mendel</td>
+                    <td>Austria</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="record"></td>
+                    <td>Island Trading</td>
+                    <td>Helen Bennett</td>
+                    <td>UK</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="record"></td>
+                    <td>Laughing Bacchus Winecellars</td>
+                    <td>Yoshi Tannamuri</td>
+                    <td>Canada</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="record"></td>
+                    <td>Magazzini Alimentari Riuniti</td>
+                    <td>Giovanni Rovelli</td>
+                    <td>Italy</td>
+                </tr>
+            </table>
+            <div class="delete-row-wrp">
+                <button type="button" class="delete-row">Delete Row</button>
+            </div>
+        </div>
+    </section>
+    <section class="hide-content-show-more-button-section sec-space-both">
+        <div class="container">
+            <h2>Hide p tag content to show more button</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+                in some form,
+                by injected humour, or randomised words which don't look even slightly believable. If you are going to
+                use a passage of
+                Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this
+                the first true
+                generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of
+                model sentence
+                structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore
+                always free from
+                repetition, injected humour, or non-characteristic words etc.</p>
+            <p class="moretext">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
+                interested. Sections
+                1.10.32 and
+                1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form,
+                accompanied by
+                English versions from the 1914 translation by H. Rackham.
+            </p>
+            <a class="show-more-btn" href="javascript:void(0);">Read more</a>
+        </div>
+    </section>
+    <section class="scroll-particular-div-section sec-space-both">
+        <div class="container">
+            <h2>Scroll to a particular div with a button click</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a class="scroll-btn" href="javascript:void(0);">Scroll to clipboard section button</a>
+        </div>
+    </section>
+    <script type="text/javascript" src="js/jquery-3.6.1.min.js"> </script>
+    <script type="text/javascript" src="js/main.js"> </script>
+</body>
+
+</html>
