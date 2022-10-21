@@ -67,4 +67,28 @@ $(document).ready(function () {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
     });
+
+    // Our Team  JS
+    $(".our-team-list li a").on("click", function (e) {
+        e.preventDefault(); // prevent hard jump, the default behavior
+        var target = $(this).attr("href"); // Set the target as variable
+        $("html, body").animate(
+            {
+                scrollTop: $(target).offset().top - 50,
+            },
+            1000
+        );
+    });
+    var trackingSidebar = throttle(function () {
+        var scrollDistance = $(window).scrollTop();
+        $(".our-team-block").each(function (i) {
+            if ($(this).position().top - 100 <= scrollDistance) {
+                $(".our-team-list li a.active").removeClass("active");
+                $(".our-team-list li a").eq(i).addClass("active");
+            }
+        });
+    }, 100);
+
+    window.addEventListener("scroll", trackingSidebar);
+
 });
