@@ -363,22 +363,25 @@ h3 {
 }
 .our-team-row .our-team-colum-left ul li a.active {
     padding-left: 25px;
+    color: red;
 }
 .our-team-row .our-team-colum-left ul li a::before {
-
-    content: "\e837";
+    /* content: "\e837"; */
+    content: ".";
     font-family: 'custom-icons';
     position: absolute;
     left: 0;
-    top: 13px;
-    font-size: 14px;
+    top: -7px;
+    font-size: 40px;
     opacity: 0;
-     -webkit-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
     transition: all .3s ease;
+    line-height: 40px;
 }
 .our-team-row .our-team-colum-left ul li a.active::before {
 
     opacity: 1;
+    left: 8px;
 
 }
 .our-team-row .our-team-colum-right {
@@ -409,4 +412,8 @@ h3 {
 
     font-weight: 600;
     font-size: 24px;
+}
+.content-section {
+
+    background-color: #eee;
 }

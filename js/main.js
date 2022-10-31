@@ -69,26 +69,44 @@ $(document).ready(function () {
     });
 
     // Our Team  JS
-    $(".our-team-list li a").on("click", function (e) {
-        e.preventDefault(); // prevent hard jump, the default behavior
-        var target = $(this).attr("href"); // Set the target as variable
-        $("html, body").animate(
-            {
-                scrollTop: $(target).offset().top - 50,
-            },
-            1000
-        );
-    });
-    var trackingSidebar = throttle(function () {
-        var scrollDistance = $(window).scrollTop();
-        $(".our-team-block").each(function (i) {
-            if ($(this).position().top - 100 <= scrollDistance) {
-                $(".our-team-list li a.active").removeClass("active");
-                $(".our-team-list li a").eq(i).addClass("active");
-            }
+    jQuery(function ($) {
+        function ourteam(callback, limit) {
+            var waiting = false; // Initially, we're not waiting
+            return function () {
+                // We return a throttled function
+                if (!waiting) {
+                    // If we're not waiting
+                    callback.apply(this, arguments); // Execute users function
+                    waiting = true; // Prevent future invocations
+                    setTimeout(function () {
+                        // After a period of time
+                        waiting = false; // And allow future invocations
+                    }, limit);
+                }
+            };
+        }
+
+        $(".our-team-list li a").on("click", function (e) {
+            e.preventDefault(); // prevent hard jump, the default behavior
+            var target = $(this).attr("href"); // Set the target as variable
+            $("html, body").animate(
+                {
+                    scrollTop: $(target).offset().top - 50,
+                },
+                1000
+            );
         });
-    }, 100);
+        var teamSidebar = ourteam(function () {
+            var scrollDistance = $(window).scrollTop();
+            $(".our-team-block").each(function (i) {
+                if ($(this).position().top - 100 <= scrollDistance) {
+                    $(".our-team-list li a.active").removeClass("active");
+                    $(".our-team-list li a").eq(i).addClass("active");
+                }
+            });
+        }, 100);
 
-    window.addEventListener("scroll", trackingSidebar);
+        window.addEventListener("scroll", teamSidebar);
 
+    });
 });
