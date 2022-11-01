@@ -68,7 +68,7 @@ $(document).ready(function () {
         });
     });
 
-    // Our Team  JS
+    // Our Team section scroll JS
     jQuery(function ($) {
         function ourteam(callback, limit) {
             var waiting = false; // Initially, we're not waiting
@@ -110,3 +110,12 @@ $(document).ready(function () {
 
     });
 });
+
+// Gallery section wrap js
+var firstColumnItems = $(".wrap .news-card:nth-child(3n+1)");
+var secondColumnItems = $(".wrap .news-card:nth-child(3n+2)");
+var thirdColumnItems = $(".wrap .news-card:nth-child(3n)");
+
+firstColumnItems.wrapAll("<div class='firs-colum'></div>");
+secondColumnItems.wrapAll("<div class='secend-colum'></div>");
+thirdColumnItems.wrapAll("<div class='third-colum'></div>");
