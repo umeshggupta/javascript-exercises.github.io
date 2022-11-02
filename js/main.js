@@ -109,13 +109,23 @@ $(document).ready(function () {
         window.addEventListener("scroll", teamSidebar);
 
     });
+    // Our Team section scroll JS End
+
+    $('#inputtext').keyup(function () {
+        if ((this.value).length > 5) {
+            $(".mydiv").addClass('text');
+        } else {
+            $(".mydiv").removeClass('text');
+        }
+    });
+    // Gallery section wrap js
+    var firstColumnItems = $(".wrap .news-card:nth-child(3n+1)");
+    var secondColumnItems = $(".wrap .news-card:nth-child(3n+2)");
+    var thirdColumnItems = $(".wrap .news-card:nth-child(3n)");
+
+    firstColumnItems.wrapAll("<div class='firs-colum'></div>");
+    secondColumnItems.wrapAll("<div class='secend-colum'></div>");
+    thirdColumnItems.wrapAll("<div class='third-colum'></div>");
 });
 
-// Gallery section wrap js
-var firstColumnItems = $(".wrap .news-card:nth-child(3n+1)");
-var secondColumnItems = $(".wrap .news-card:nth-child(3n+2)");
-var thirdColumnItems = $(".wrap .news-card:nth-child(3n)");
 
-firstColumnItems.wrapAll("<div class='firs-colum'></div>");
-secondColumnItems.wrapAll("<div class='secend-colum'></div>");
-thirdColumnItems.wrapAll("<div class='third-colum'></div>");
