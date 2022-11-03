@@ -126,6 +126,23 @@ $(document).ready(function () {
     firstColumnItems.wrapAll("<div class='firs-colum'></div>");
     secondColumnItems.wrapAll("<div class='secend-colum'></div>");
     thirdColumnItems.wrapAll("<div class='third-colum'></div>");
+    // To Do List js
+    $(function () {
+        var $list, $newItemForm;
+        $list = $('.item-list ul');
+        $newItemForm = $('#newItemForm');
+
+        $newItemForm.on('submit', function (e) {
+            e.preventDefault();
+            var text = $('input:text').val();
+            $list.append('<li>' + text + '<span class="icon-close-1 close-itme"></span> </li>');
+            $('input:text').val('');
+        });
+
+        $list.on('click', '.close-itme', function () {
+            var $item = $(this).parent().remove();
+        });
+    });
 });
 
 

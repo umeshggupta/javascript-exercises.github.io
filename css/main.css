@@ -474,3 +474,51 @@ transform: scale(1.3);
 	
 	
 }
+.to-do-list-section .item-list {
+
+    background-color: #EEF1FF;
+    padding: 25px;
+    margin-bottom: 20px;
+
+}
+.to-do-list-section .item-list ul li {
+    background-color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.to-do-list-section .item-list ul li span {
+
+    cursor: pointer;
+    font-size: 14px;
+}
+.to-do-list-section form {
+
+    padding: 15px;
+    background-color: #D2DAFF;
+    width: fit-content;
+    margin-inline: auto;
+}
+.to-do-list-section form input {
+
+    padding: 10px;
+    border: none;
+    margin-right: 5px;
+}
+.to-do-list-section form input#add {
+
+    background-color: #0080ff;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+}
